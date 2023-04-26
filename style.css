@@ -268,4 +268,16 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 10px;
+  text-align: center;
+}
+
+#buttonsDialogDelete button {
+  border-radius: 8px;
+}
+
+#deleteButtonInDialogDelete button {
+  background-color: red;
+}
+#cancelButtonInDialogDelete button {
+  background-color: lightgreen;
 }
