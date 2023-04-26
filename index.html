@@ -1,18 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Galop Galore</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2020/09/10/17/42/unicorn-5561072__480.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.pixabay.com/photo/2020/09/10/17/42/unicorn-5561072__480.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Galop Galore</h1>
+      <h1>Galop Galore</h1>
     </header>
+    <dialog open id="dialogDelete">
+      <form action="" id="formDelete">
+        <label for="inputPassword">Password:</label>
+        <input
+          type="text"
+          name="password"
+          id="inputPassword"
+          placeholder="Type password to confirm"
+        />
+        <div id="buttonsDialogDelete">
+          <div id="deleteButtonInDialogDelete">
+            <button>Delete</button>
+          </div>
+          <div id="cancelButtonInDialogDelete">
+            <button type="button">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
