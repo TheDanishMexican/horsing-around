@@ -281,3 +281,9 @@ footer {
 #cancelButtonInDialogDelete button {
   background-color: lightgreen;
 }
+
+/* ========== DROPDOWN SORTING ========== */
+
+#dropdownSort {
+  margin-left: 100px;
+}

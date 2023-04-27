@@ -4,10 +4,11 @@ window.addEventListener("load", main);
 const endpoint =
   "https://gallopgalore-80085-default-rtdb.europe-west1.firebasedatabase.app/";
 
-function main() {
+async function main() {
   /* ========== EVENT LISTENERS ========== */
   //I am aware that these probably need to be placed elsewhere,
   //but I don't know where would be the best, so they are just here for now
+
   const cancelButtonInDialogDelete = document.querySelector(
     "#cancelButtonInDialogDelete"
   );
@@ -67,3 +68,23 @@ function closeDialogDelete() {
   const dialogDelete = document.querySelector("#dialogDelete");
   dialogDelete.close();
 }
+
+const myArr = [
+  { name: "daniel", age: 23 },
+  { name: "danel", age: 234 },
+  { name: "danil", age: 2656 },
+  { name: "danie", age: 456456 },
+];
+
+function sortByAge(array) {
+  const age = function (a, b) {
+    return a.age - b.age;
+  };
+  return myArr.sort(age);
+}
+
+console.log(sortByAge(myArr));
+
+function sortByName(jsonData) {}
+
+function sortByRace(jsonData) {}
