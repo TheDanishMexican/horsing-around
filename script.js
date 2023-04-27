@@ -69,21 +69,12 @@ function closeDialogDelete() {
   dialogDelete.close();
 }
 
-const myArr = [
-  { name: "daniel", age: 23 },
-  { name: "danel", age: 234 },
-  { name: "danil", age: 2656 },
-  { name: "danie", age: 456456 },
-];
-
 function sortByAge(array) {
   const age = function (a, b) {
     return a.age - b.age;
   };
   return myArr.sort(age);
 }
-
-console.log(sortByAge(myArr));
 
 function sortByName(jsonData) {}
 
